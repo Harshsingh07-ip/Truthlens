@@ -1,0 +1,7 @@
+{
+  "name": "TruthLens",
+  "description": "AI-powered digital forensics and cybersecurity platform to verify images, videos, audio, news, and online claims for authenticity and manipulation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

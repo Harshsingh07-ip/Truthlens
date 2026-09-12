@@ -1,0 +1,48 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile document storing account settings and metadata",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "lastLoginAt": { "type": "string" },
+        "incognitoDefault": { "type": "boolean" }
+      },
+      "required": ["email", "createdAt"]
+    },
+    "VerificationRecord": {
+      "title": "VerificationRecord",
+      "description": "User forensic search and verification history record",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "targetTitle": { "type": "string" },
+        "contentType": { "type": "string" },
+        "verdictLabel": { "type": "string" },
+        "status": { "type": "string" },
+        "confidenceScore": { "type": "number" },
+        "summary": { "type": "string" },
+        "hashSha256": { "type": "string" },
+        "timestamp": { "type": "string" },
+        "targetPreviewUrl": { "type": "string" },
+        "targetRawText": { "type": "string" },
+        "isSensitiveZeroKnowledge": { "type": "boolean" },
+        "engineUsed": { "type": "string" }
+      },
+      "required": ["userId", "targetTitle", "contentType", "status", "verdictLabel", "timestamp"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User private profile document"
+    },
+    "/users/{userId}/history/{recordId}": {
+      "schema": "VerificationRecord",
+      "description": "User forensic search history"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 104" width="200" height="208">
+  <!-- Soft ground shadow -->
+  <ellipse cx="50" cy="100" rx="22" ry="2.5" fill="#334155" opacity="0.3" />
+  
+  <!-- Outer Camera Housing -->
+  <path d="M 28 8 C 40 10.5 60 10.5 72 8 C 88 8 92 14 92 28 C 89.5 40 89.5 60 92 72 C 92 86 88 92 72 92 C 60 89.5 40 89.5 28 92 C 12 92 8 86 8 72 C 10.5 60 10.5 40 8 28 C 8 14 12 8 28 8 Z" fill="#141a24" />
+  
+  <!-- Bold White Lens Housing Ring -->
+  <circle cx="50" cy="50" r="33" fill="#ffffff" />
+  
+  <!-- Inner circular dark boundary -->
+  <circle cx="50" cy="50" r="30.5" fill="#ffffff" />
+  
+  <!-- 6 Blue Shutter Blades with White Divider Lines -->
+  <g clip-path="url(#lensClip)">
+    <clipPath id="lensClip">
+      <circle cx="50" cy="50" r="30.5" />
+    </clipPath>
+    <g transform="rotate(0 76.41 34.75)">
+      <path d="M 76.41 34.75 A 30.5 30.5 0 0 1 76.41 65.25 L 45.63 54.81 L 51.98 56.19 Z" fill="#24a0ed" stroke="#ffffff" stroke-width="2.2" stroke-linejoin="round" />
+    </g>
+    <g transform="rotate(0 76.41 65.25)">
+      <path d="M 76.41 65.25 A 30.5 30.5 0 0 1 50.00 80.50 L 43.65 48.61 L 45.63 54.81 Z" fill="#24a0ed" stroke="#ffffff" stroke-width="2.2" stroke-linejoin="round" />
+    </g>
+    <g transform="rotate(0 50.00 80.50)">
+      <path d="M 50.00 80.50 A 30.5 30.5 0 0 1 23.59 65.25 L 48.02 43.81 L 43.65 48.61 Z" fill="#24a0ed" stroke="#ffffff" stroke-width="2.2" stroke-linejoin="round" />
+    </g>
+    <g transform="rotate(0 23.59 65.25)">
+      <path d="M 23.59 65.25 A 30.5 30.5 0 0 1 23.59 34.75 L 54.37 45.19 L 48.02 43.81 Z" fill="#24a0ed" stroke="#ffffff" stroke-width="2.2" stroke-linejoin="round" />
+    </g>
+    <g transform="rotate(0 23.59 34.75)">
+      <path d="M 23.59 34.75 A 30.5 30.5 0 0 1 50.00 19.50 L 56.35 51.39 L 54.37 45.19 Z" fill="#24a0ed" stroke="#ffffff" stroke-width="2.2" stroke-linejoin="round" />
+    </g>
+    <g transform="rotate(0 50.00 19.50)">
+      <path d="M 50.00 19.50 A 30.5 30.5 0 0 1 76.41 34.75 L 51.98 56.19 L 56.35 51.39 Z" fill="#24a0ed" stroke="#ffffff" stroke-width="2.2" stroke-linejoin="round" />
+    </g>
+  </g>
+</svg>
